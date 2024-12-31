@@ -10,7 +10,7 @@ export default function ShopPage() {
     <>
       <Title title="Tienda" subtitle="Todos los productos" className="mb-2" />
 
-      <ProductGrid products={products} />
+      <ProductGrid products={products}/>
     </>
   )
 }
