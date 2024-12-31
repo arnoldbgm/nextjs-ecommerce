@@ -1,7 +1,9 @@
+import { Title } from "@/components";
+
 export default function ShopPage() {
   return (
-    <main>
-      <div>Prueba</div>
-    </main>
+    <>
+      <Title title="Tienda" subtitle="Todos los productos" className="mb-2" />
+    </>
   )
 }
