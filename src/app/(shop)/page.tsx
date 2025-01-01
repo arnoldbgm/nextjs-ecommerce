@@ -1,12 +1,19 @@
+import { getPaginaterProductsWithImages } from '@/actions';
 import { ProductGrid, Title } from '@/components';
-import { initialData } from '@/seed/seed';
+
+interface Props {
+  searchParams: {
+    page?: string;
+  }
+}
 
 
-const products = initialData.products;
+export default async function Home({ searchParams }: Props) {
 
+  const page = searchParams.page ? parseInt(searchParams.page) : 1;
 
+  const { products } = await getPaginaterProductsWithImages({ page });
 
-export default function Home() {
   return (
     <>
       <Title
@@ -15,10 +22,10 @@ export default function Home() {
         className="mb-2"
       />
 
-      <ProductGrid 
-        products={ products }
+      <ProductGrid
+        products={products}
       />
-      
+
     </>
   );
 }
