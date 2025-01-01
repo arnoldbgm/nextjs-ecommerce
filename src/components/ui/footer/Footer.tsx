@@ -8,9 +8,9 @@ export const Footer = () => {
       <Link
         href='/'
       >
-        <span className={`${titleFont.className} antialiased font-bold `}>Teslo </span>
+        <span className={`${ titleFont.className } antialiased font-bold `}>Teslo </span>
         <span>| shop </span>
-        <span>© {new Date().getFullYear()}</span>
+        <span>© { new Date().getFullYear() }</span>
       </Link>
 
       <Link

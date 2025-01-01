@@ -1,7 +1,9 @@
 import { PageNotFound } from '@/components';
 
 
-export default function NotFoundPage() {
+export default function NotFoundPageBySlug() {
+
+
   return (
     <PageNotFound />
   );
